@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+ <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+ <script src="jquery.ml-keyboard.js"></script>
+ <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="jquery.ml-keyboard.css">
+  <link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+<script>
+$(document).ready(function(){
+  $('input#example-1').mlKeyboard({layout: 'en_US'});
+});
+$(document).ready(function(){
+  $('input#example-2').mlKeyboard({layout: 'ru_RU'});
+});
+$(document).ready(function(){
+  $('input#example-3').mlKeyboard({layout: 'es_ES'});
+});
+$(document).ready(function(){
+  $('input#example-5').mlKeyboard({layout: 'fr_FR', trigger: '#example-5-btn'});
+});
+
+</script>
+<div class="container">
+
+<div>
+<h4>English</h4>
+<input type="text" id="example-1" class="col-md-12" placeholder="Try"/>
+<div>
+
+<div>
+<h4>Russian</h4>
+<input type="text" id="example-2" class="col-md-12" placeholder="Try"/>
+</div>
+		  
+<div>
+<h4>
+Spanish
+<i>(click vowels to select accents)</i>
+</h4>
+<input type="text" id="example-3" class="col-md-12" placeholder="Try"/>
+</div>
+
+<div>
+ <h4>French
+<i>(click vowels to select accents)</i></h4>
+<input type="text" id="example-5" class="col-md-10" placeholder="Try"/>
+<a href='#' id="example-5-btn" class="btn btn-default"><i class="glyphicon glyphicon-font"></i></a>
+</div>
+
+</div>
+</body>
+</html>
